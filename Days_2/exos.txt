@@ -1,0 +1,12 @@
+#Exos du jour
+
+#Déclaration de variable, types basiques de données, boucle et conditions
+
+Exo1 : Creer une fonction qui retourne True si une année passée en paramètre est bissextile et False sinon
+C'est quoi une année bissextile (man Google)
+
+Exo2 : Creer une fonction qui affiche Majeur ou Mineur en fonction de l'age rentrée par l'utilisateur
+Ici, tu attends un input de l'utilisateur, dans le premier exo on appelle directement la fonction avec les paramètres
+
+Exo3 : Ecris une fonction qui prend en paramètre un entier représentant une année et renvoie sa représentation en chiffres romains
+Exemple : 2024 --> MMXXIV
