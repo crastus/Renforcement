@@ -81,3 +81,6 @@ int main (int ac, char **av)
     //tout en convertissant la chaine de caractere en entier
     Mimaj(m_getnbr(av[1]));
 }
+
+//Note : 05/10
+//Ici, je voulais que tu demandes a l'utilisateur son age et que tu le récupères et non qu'il passe ca en ligne de commande
