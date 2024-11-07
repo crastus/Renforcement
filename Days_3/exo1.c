@@ -14,7 +14,6 @@ int m_putstr (char *a)
     for (i = 0; a[i] != '\0'; i++) {
         m_putchar(a[i]);
     }
-    /* ah bon? tu retournes 0 et tu me parles de chaine de caractères?*/
     return 0;
 }
 
