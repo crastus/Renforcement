@@ -36,7 +36,3 @@ void n_premier(int nbr)
     }
 }
 
-int main(int ac, char **av)
-{
-    n_premier(atoi(av[1]));
-}
