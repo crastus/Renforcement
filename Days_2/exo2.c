@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include<stdlib.h>
 
+/*Exercice correct*/
+
 //Cette fonction sert a affiché un seul caractère
 char m_putchar (char a)
 {

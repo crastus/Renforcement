@@ -26,6 +26,16 @@ int m_putstr (char *a)
 /* Tu n'as rien compris de l'exercice. La fonction prend en paramètre l'année et non le nombre de jours. C'est a toi meme de vérifier certaines conditions sur l'année pour savoir si elle est bissextile ou non*/
 
 //Cette fonction retourne "True" si l'année est bissextile et "False" si elle ne l'est pas
+/* La fonction est correcte mais on peut faire mieux. Il y a beaucoup de lignes inutiles dont on peut se passer. Déja, l'utilisation de la variable nbr est inutile. Tu peux comparer directement dans la condition if. Ensuite tu peux vérifier directement les trois conditions simultanément*/
+/*Un apercu de ce que je dis*/
+
+char *bissextile_or_not(int year)
+{
+    if ((year % 4 == 0) && ((year % 100 != 0 || year % 400 == 0)))
+        return ("True");
+    return ("False");
+}
+
 char *fonction_bs(int year)
 {
     int nbr = year % 4;

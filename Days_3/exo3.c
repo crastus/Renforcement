@@ -19,6 +19,7 @@ int m_putstr (char *a)
 
 //Cette fonction vous dis si le nombre que vous entrez est un nombre premier ou pas.
 //Cependant, si le nombre entrez est inférieur a 10, il affiche bonjour * le nombre entrez
+/*ah bon? quel professeur t'a appris a déterminer un nombre premier ainsi?*/
 void n_premier(int nbr)
 {
     int n = nbr % 3;

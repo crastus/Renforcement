@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include<stdlib.h>
 
+/*correct*/
+
 char m_putchar (char a)
 {
     write(1, &a, 1);
