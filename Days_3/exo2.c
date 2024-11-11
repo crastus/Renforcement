@@ -7,19 +7,14 @@
 void exo2(int nbr)
 {
     int n = 1;
-    int n1 = 0;
 
     while (n <= nbr) {
-        n1 = n % 3;
-        if (n1 == 0) {
-            n1 = n % 5;
-            if (n1 == 0) {
+        if (n % 3 == 0) {
+            if (n % 5 == 0) {
                 n++;
             } else {
                 printf("%d \n", n);
             }
-        } else {
-            n++;
         }
         n++;
     }

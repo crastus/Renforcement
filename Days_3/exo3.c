@@ -22,18 +22,24 @@ int m_putstr (char *a)
 /*ah bon? quel professeur t'a appris a déterminer un nombre premier ainsi?*/
 void n_premier(int nbr)
 {
-    int n = nbr % 3;
-    int n1 = nbr % 2;
+    int i = 1;
+    int pts = 0;
+
     if (nbr < 10) {
         for (int i = 0; i < nbr; i++) {
             m_putstr("bonjour\n");
         }
     } else {
-        if (n != 0 && n1 != 0) {
+        while (i <= nbr) {
+            if (nbr % i == 0)
+                pts++;
+            i++;
+        }
+        if (pts == 2) {
             m_putstr("C'est un nombre premier\n");
         } else {
             m_putstr("C'est pas un nombre premier\n");
         }
     }
-}
 
+}

@@ -38,23 +38,11 @@ char *bissextile_or_not(int year)
 
 char *fonction_bs(int year)
 {
-    int nbr = year % 4;
-
-    if (nbr == 0) {
-        nbr = nbr % 100;
-        if (nbr == 0) {
-            nbr = nbr % 400;
-            if (nbr == 0) {
-                return ("True\n");
-            } else {
-                return ("false\n");
-            }
-        } else {
+    if (year % 4 == 0) {
+        if (year % 100 != 0 || year % 400 == 0)
             return ("True\n");
-        }
-    } else {
-        return ("false\n");
     }
+    return ("false\n");
 }
 
 /*Aucune fonction main n'est attendue dans cet exercice je voulais juste la fonction qui renvoie True ou False en fonction de l'année. Et a la limite si tu veux faire de fonction main, tu appelles ta fonction avec un paramètre bien défini. Ici, on ne prend pas l'input a partir du terminal*/
