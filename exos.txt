@@ -1,0 +1,92 @@
+1. Structures en C
+Exercice 1 : Gestion d'une bibliothèque avec des livres
+
+Objectif : Créer une structure pour gérer une bibliothèque de livres avec des fonctionnalités pour ajouter, supprimer et afficher des livres.
+
+Consignes :
+
+    Crée une structure Livre qui contient :
+        Un identifiant unique (int).
+        Un titre (chaîne de caractères).
+        Un auteur (chaîne de caractères).
+        Un nombre d'exemplaires disponibles (int).
+    Implémente des fonctions pour :
+        Ajouter un livre à la bibliothèque.
+        Supprimer un livre de la bibliothèque.
+        Afficher tous les livres de la bibliothèque.
+        Rechercher un livre par titre ou auteur.
+    Bonus : Utiliser un tableau dynamique pour stocker les livres et implémenter un mécanisme de gestion de mémoire.
+
+Exercice 2 : Liste chaînée pour gérer une file d'attente
+
+Objectif : Implémenter une file d'attente (FIFO) à l'aide de listes chaînées. Chaque élément de la file doit être une structure contenant des informations comme le nom d'un client et l'heure d'arrivée.
+
+Consignes :
+
+    Crée une structure Client avec les champs suivants :
+        Nom du client (chaîne de caractères).
+        Heure d'arrivée (int ou time_t).
+
+    Crée une liste chaînée où chaque nœud représente un client dans la file d'attente.
+
+    Implémente les fonctions suivantes :
+        ajouter_client : Ajouter un client à la fin de la file.
+        retirer_client : Retirer le client en tête de la file.
+        afficher_file : Afficher tous les clients présents dans la file d'attente.
+
+    Bonus : Implémenter une fonction rechercher_client pour rechercher un client par son nom.
+
+3. Listes chaînées circulaires
+Exercice 3 : Liste chaînée circulaire pour un jeu de cercle
+
+Objectif : Implémenter une liste chaînée circulaire pour modéliser un jeu de cercle (par exemple, le jeu du "Josephus").
+
+Consignes :
+
+    Crée une structure Personne avec les champs suivants :
+        Un identifiant (int).
+        Un nom (chaîne de caractères).
+
+    Implémente une liste chaînée circulaire où chaque nœud représente une personne.
+
+    Implémente les fonctions suivantes :
+        ajouter_personne : Ajouter une personne à la liste circulaire.
+        elire_vainqueur : Exécuter l'algorithme de Josephus pour déterminer la personne gagnante après plusieurs éliminations successives.
+        afficher_cercle : Afficher toutes les personnes dans la liste circulaire.
+
+    Bonus : Permettre à l'utilisateur de choisir l'intervalle d'élimination.
+
+4. Arbre binaire
+Exercice 4 : Implémentation d'un arbre binaire de recherche
+
+Objectif : Implémenter un arbre binaire de recherche (BST) pour stocker des entiers, avec des fonctionnalités de base pour insérer, supprimer et rechercher des éléments.
+
+Consignes :
+
+    Crée une structure Noeud qui contient :
+        Une valeur entière.
+        Un pointeur vers le fils gauche et un autre vers le fils droit.
+
+    Implémente les fonctions suivantes :
+        inserer : Insérer un nombre dans l'arbre.
+        supprimer : Supprimer un nombre de l'arbre.
+        rechercher : Vérifier si un nombre existe dans l'arbre.
+        afficher_arbre : Afficher l'arbre en ordre (in-order traversal).
+
+    Bonus : Implémenter un parcours en profondeur (pré-order, post-order).
+
+5. Analyse combinatoire
+Exercice 5 : Génération de permutations et de combinaisons
+
+Objectif : Écrire un programme qui génère toutes les permutations et combinaisons possibles d'un ensemble d'éléments donnés.
+
+Consignes :
+
+    Crée une fonction permutations qui génère toutes les permutations d'un tableau d'entiers.
+
+    Crée une fonction combinaisons qui génère toutes les combinaisons possibles d'un ensemble de k éléments parmi n éléments.
+
+    Implémenter ces deux fonctions en utilisant des algorithmes récursifs.
+
+    Bonus : Afficher les résultats dans un format lisible et vérifier les performances pour des tailles d'entrée plus grandes (ex. : n = 10, k = 5).
+
